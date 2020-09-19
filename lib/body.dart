@@ -27,7 +27,11 @@ class _BodyState extends State<Body> {
 
   void snack(){
     SnackBar snackBar = new SnackBar(
-        content: new Text('Je suis une snackbar')
+        content: new Text(
+            'Je suis une snackbar',
+        textScaleFactor: 1.5,
+        ),
+      duration: new Duration(seconds: 5),
     );
 
     Scaffold.of(context).showSnackBar(snackBar);
